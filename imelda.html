@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Ma description</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf2f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e91e63;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .section {
+            background: white;
+            max-width: 700px;
+            margin: 25px auto;
+            padding: 25px 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .section h2 {
+            color: #e91e63;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            text-align: justify;
+        }
+
+        /* Écran de code secret */
+
+        #lockScreen {
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 30px 20px;
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        #lockScreen h1 {
+            margin-bottom: 15px;
+        }
+
+        #codeSecret {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+
+        #lockScreen button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #e91e63;
+            color: white;
+            font-size: 16px;
+        }
+
+        #messageErreur {
+            color: red;
+        }
+
+        /* Contenu caché au départ */
+
+        #contenu {
+            display: none;
+        }
+
+        /* Photo */
+
+        .photo-container {
+            text-align: center;
+        }
+
+        .photo-container img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #e91e63;
+        }
+
+        .slogan {
+            color: #777;
+            font-style: italic;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        video {
+            max-width: 100%;
+            margin: 15px 0;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Écran de protection -->
+
+    <div id="lockScreen">
+
+        <h1>🔐 Petit accès privé</h1>
+
+        <p>
+            Entre le code secret pour découvrir
+            le petit univers d'Imela ❤️
+        </p>
+
+        <input
+            type="password"
+            id="codeSecret"
+            placeholder="Code secret"
+        >
+
+        <br>
+
+        <button onclick="verifierCode()">
+            Découvrir ❤️
+        </button>
+
+        <p id="messageErreur"></p>
+
+    </div>
+
+
+    <!-- Tout le contenu du site -->
+
+    <div id="contenu">
+
+
+        <header class="hero">
+
+            <div class="photo-container">
+
+                <img src="imelda.jpg" alt="Photo d'Imela">
+
+            </div>
+
+            <h1>Moi, Imela 🌸</h1>
+
+            <p class="slogan">
+                Bienvenue dans mon petit univers ❤️
+            </p>
+
+        </header>
+
+
+        <p>
+            Je m'appelle BATCHO Imela Fifamin Hannah.
+            Née le 25 mars 2008 à Cotonou, je suis issue
+            d'une famille modeste constituée de 5 enfants
+            uniquement que des filles dont je suis l'aînée.
+        </p>
+
+
+        <p>
+            Mon père, BATCHO Coffi Siméon est un juriste
+            en droit privé.
+        </p>
+
+
+        <p>
+            Quant à ma mère, GBEGAN Sylvie,
+            elle est une commerçante.
+        </p>
+
+
+        <p>
+            Titulaire d'un Baccalauréat Série D obtenu
+            avec la mention bien au Complexe Privé la
+            Grande Académie, je suis actuellement
+            étudiante passant en deuxième année des
+            Sciences Industrielles (SI) option Génie
+            Chimique Procédés à l'Ecole Polytechnique
+            d'Abomey Calavi (EPAC).
+
+            Je suis motivée par tout ce qui touche à
+            la chimie et à la transformation, ce qui
+            justifie ce choix.
+        </p>
+
+
+        <p>
+            Le Génie Chimique – Procédés est une filière
+            d’ingénierie qui s’intéresse à la transformation
+            de matières premières en produits utiles,
+            en utilisant des procédés chimiques, physiques
+            et mécaniques.
+
+            L’objectif est de comprendre, concevoir,
+            dimensionner et optimiser les installations
+            permettant de réaliser ces transformations
+            de manière efficace, sûre, économique et
+            respectueuse de l’environnement.
+
+            On y étudie notamment :
+        </p>
+
+
+        <ul>
+
+            <li>
+                ⚗️ Chimie : réactions chimiques et
+                propriétés des substances ;
+            </li>
+
+            <li>
+                🌡️ Thermodynamique : énergie, chaleur,
+                équilibre des systèmes ;
+            </li>
+
+            <li>
+                💧 Transferts de matière et de chaleur ;
+            </li>
+
+            <li>
+                🔄 Opérations unitaires : distillation,
+                filtration, séchage, évaporation,
+                absorption, etc. ;
+            </li>
+
+            <li>
+                ⚙️ Mécanique des fluides : circulation
+                des liquides et des gaz dans les
+                installations ;
+            </li>
+
+            <li>
+                🏭 Génie des procédés : conception et
+                optimisation des procédés industriels ;
+            </li>
+
+            <li>
+                🎛️ Automatique et contrôle des procédés ;
+            </li>
+
+            <li>
+                🦺 Sécurité industrielle et gestion
+                des risques ;
+            </li>
+
+            <li>
+                🌱 Traitement des eaux et protection
+                de l’environnement.
+            </li>
+
+        </ul>
+
+
+        <p>
+            🏭 Où peut travailler un diplômé ?
+        </p>
+
+
+        <p>
+            Le domaine est très large. Il peut travailler
+            dans : industrie pharmaceutique, agroalimentaire,
+            pétrochimie, cimenterie, traitement des eaux,
+            production d'énergie, cosmétique, matériaux,
+            industries chimiques, etc.
+
+            Son travail peut consister à concevoir une
+            installation, améliorer une production,
+            contrôler un procédé, réduire les pertes
+            et la consommation d'énergie, assurer la
+            qualité ou améliorer la sécurité d'une usine.
+        </p>
+
+
+        <p>
+            Parlant de mes connaissances pratiques,
+            en dehors des TP effectués à l'école je
+            n'en sais plus rien. Je n'ai suivi jusqu'à
+            présent aucune formation professionnelle.
+        </p>
+
+
+        <p>
+            Après mon diplôme, ça me plait bien d'effectuer
+            une carrière dans le domaine de l'industrie
+            pharmaceutique ou agroalimentaire, mais bon
+            le temps me donnera la réponse.
+        </p>
+
+
+        <p>
+            Je suis physiquement plate, un peu élancée,
+            de teint plus ou moins clair et belle.
+            J'aime bien ma famille, je suis toujours
+            souriante mais un peu ignorante.
+        </p>
+
+
+        <img src="imelda.jpg" alt="Ma photo">
+
+
+        <video src="imeyas.mp4" controls>
+            Un petit moment de folie
+        </video>
+
+
+        <video src="vidéo chant.mp4" controls>
+            Une petite snap
+        </video>
+
+
+    </div>
+
+
+    <!-- JavaScript du code secret -->
+
+    <script>
+
+        function verifierCode() {
+
+            const code =
+                document.getElementById("codeSecret").value;
+
+            if (code === "IMELA2026") {
+
+                document.getElementById("lockScreen")
+                    .style.display = "none";
+
+                document.getElementById("contenu")
+                    .style.display = "block";
+
+            } else {
+
+                document.getElementById("messageErreur")
+                    .textContent =
+                    "❌ Code incorrect. Essaie encore 😄";
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
